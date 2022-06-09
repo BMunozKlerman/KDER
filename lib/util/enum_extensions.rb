@@ -1,12 +1,9 @@
 module Enumerable
   # Thanks StackOverflow users!
   # http://stackoverflow.com/questions/7749568/how-can-i-do-standard-deviation-in-ruby
-  def sum
-    inject(:+)
-  end
 
   def mean
-    sum / length.to_f
+    inject(:+) / length.to_f
   end
   alias average mean
   def sample_variance
